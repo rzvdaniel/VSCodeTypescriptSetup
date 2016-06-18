@@ -7,10 +7,11 @@ https://www.typescriptlang.org/index.html#download-links
 
 Method 2.
 Installed TypeScript as a Node.js package
-npm install -g typescript
+- <i>npm install -g typescript</i>
 
 Note:
-Please be sure you don't have an older TypeScript version path in your Environment Variables -> System Variables -> PATH.
+</br>
+Please be sure you don't have an older TypeScript version path in <i>Environment Variables -> System Variables -> PATH</i>
 
 ## Install and open Visual Studio Code
 https://code.visualstudio.com
@@ -20,6 +21,7 @@ https://code.visualstudio.com
 The two key files for the TypeScript project are:
 
 1. tsconfig.json
+<pre>
 {
     "compilerOptions": {
         "module": "commonjs",
@@ -29,13 +31,15 @@ The two key files for the TypeScript project are:
         "watch": true
     }
 }
+</pre>
 
-- "rootDir": "src" is our container of the TypeScript files (.ts)
+- "rootDir": "src" is our container of the TypeScript files (.ts) 
 - "outDir": "js" is the containter where Javascript files will be generated (.js)
 - "watch": true instructs the type script compiler to watch for any ts files changes from the "rootDir"
 
 
 2. tasks.json
+<pre>
 {
     "version": "0.1.0",
     "command": "tsc",
@@ -43,7 +47,7 @@ The two key files for the TypeScript project are:
     "showOutput": "silent",
     "problemMatcher": "$tsc"
 }
-
+</pre>
 - "command": "tsc" executes type script compiler as an external task
 
 ## Run the Build Task
