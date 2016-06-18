@@ -56,3 +56,7 @@ The two key files for the TypeScript project are:
 ## Run the Build Task
 
 Press Ctrl+Shift+B and the HelloWorld.js file will be created in "js" folder. Any subsequent update (save) of the HelloWorld.ts will update the corresponding HelloWorld.js.
+
+## Reference
+https://code.visualstudio.com/Docs/languages/typescript
+
