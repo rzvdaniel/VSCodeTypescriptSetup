@@ -23,7 +23,8 @@ https://code.visualstudio.com
 
 The two key files for the TypeScript project are:
 
-1. tsconfig.json
+<b>1. tsconfig.json</b>
+
 <pre>
 {
     "compilerOptions": {
@@ -39,9 +40,10 @@ The two key files for the TypeScript project are:
 - <i>"rootDir": "src"</i> is our container of the TypeScript files (.ts) 
 - <i>"outDir": "js"</i> is the containter where Javascript files will be generated (.js)
 - <i>"watch": true</i> instructs the type script compiler to watch for any ts files changes from the "rootDir"
+</br>
 
+<b>2. tasks.json</b>
 
-2. tasks.json
 <pre>
 {
     "version": "0.1.0",
@@ -51,6 +53,7 @@ The two key files for the TypeScript project are:
     "problemMatcher": "$tsc"
 }
 </pre>
+
 - <i>"command": "tsc"</i> executes type script compiler as an external task
 
 ## Run the Build Task
